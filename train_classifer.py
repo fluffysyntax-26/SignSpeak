@@ -87,6 +87,9 @@ def train_hand_sign_classifier(data_path='data.pickle', save_path='model.p'):
     plt.tight_layout()
     plt.savefig('confusion_matrix.png')
     plt.close()
+    # Print confusion matrix as text
+    print("\nConfusion Matrix (as text):")
+    print(cm)
 
     # Cross-validation
     print("\nPerforming cross-validation...")
